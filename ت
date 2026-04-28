@@ -1,0 +1,61 @@
+color1 = input ("اكتب لون انت تحبه:\n")
+color2 = input ("هل تريد كتابه لون اخر؟ نعم/لا؟\n")
+if color2== "نعم":
+	color=input ("اكتب اللون:\n")
+	print (f"انت تحب اللون ال{color1} وال{color}")
+elif color2 == "لا":
+	print (f"انت تحب اللون ال{color1}")
+else:
+	print ("اكتب بشكل صحيح")
+	
+#تعديل
+colors = [ ]
+color1 = input ("اكتب لون انت تحبه:\n")
+colors. append (color1)
+color2 = input ("هل تريد كتابه لون اخر؟ نعم/لا؟\n")
+if color2== "نعم":
+	color=input ("اكتب اللون:\n")
+	colors. append (color)
+	print (f"انت تحب اللون ال{color1} وال{color}")
+elif color2 == "لا":
+	print (f"انت تحب اللون ال{color1}")
+else:
+	print ("اكتب بشكل صحيح")
+
+
+class_a=["hejd","iejj"]
+class_b=["djdj","jejej"]
+class_c= class_a+class_b
+print (class_c)
+print(type(class_c))
+
+names =["hlaa","maya"]
+print (names)
+
+name = input ("اكتب اسمك:\n")
+if name in names :
+	print (f"هلا {name}")
+else:
+	print("لاااا")
+
+books= [ ]
+book1= input ("اكتب اسم احد كتبك:\n")
+books. append (book1)
+book2 = input ("اكتب اسم كتاب اخر انت تملكه:\n")
+books. append (book2)
+print (f"كتبك هي: {books}")
+
+wish_list =[ ]
+book3 = input ("اكتب اسم كتاب تريد امتلاكه في المستقبل:\n")
+wish_list. append (book3)
+book4 = input ("اكتب اسم كتاب اخر تريد اقتنائه:\n")
+wish_list. append (book4)
+print (f"الكتب التي تريدها هي :{wish_list}")
+
+wish_list_book= input("اكتب احد الكتب التي تريدها وحصلت عليها:\n")
+books. append (wish_list_book)
+print (f"الكتب التي تقتنيها هي :{books}")
+
+book5 = input ("اكتب كتاب تريد التبرع به:\n")
+books. remove(book5)
+print (f"كتبك هي :{books}")
