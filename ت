@@ -59,3 +59,41 @@ print (f"الكتب التي تقتنيها هي :{books}")
 book5 = input ("اكتب كتاب تريد التبرع به:\n")
 books. remove(book5)
 print (f"كتبك هي :{books}")
+
+
+
+#تعديل
+
+‏library = []
+wishlist = []
+
+book1 = input("اكتب اسم كتاب عندك:\n")
+library.append(book1)
+
+book2 = input("اكتب اسم كتاب اخر لديك (او اضغط enter للتخطي:\n")
+if book2:
+    library.append(book2)
+
+print(f"يوجد في مكتبتك:{library}")
+
+wish1 = input("اكتب اسم كتاب تريد الحصول عليه في المستقبل:\n")
+wishlist.append(wish1)
+
+wish2 = input("اكتب اسم كتاب اخر تريده او اضغط enter للتخطي:\n")
+if wish2:
+    wishlist.append(wish2)
+
+print(f"الكتب التي تريدها هي:{wishlist}")
+
+book = input("هل احد كتب امنياتك انت حصلت عليه بالفعل؟ (اضغط enter للتخطي):\n")
+if book in wishlist:
+    wishlist.remove(book)
+    library.append(book)
+
+print(f"الكتب التي لديك {library}")
+print(f"الكتب التي تتمناها {wishlist}")
+
+lost_book = input("هل تريد التبرع بأحد كتبك؟ (اضغط enter للتخطي):\n")
+if lost_book in library:
+    library.remove(lost_book)
+    print(f"المكتبه فيها: {library}")
